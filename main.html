@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/path/to/compiled/flipclock.css" />
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="header-top-all d-flex justify-content-between align-items-center">
+                            <div class="header-top-left">
+                                <div class="exchange">
+                                    <span class="USD">US/USD</span>
+                                    <span><i class="fas fa-caret-down"></i></span>
+                                </div>
+
+                                <div class="sells">
+                                    <span id="sell">Sell With Us</span>
+                                    <span><i class="fas fa-caret-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="header-top-right">
+                                <i class="fab fa-facebook"></i>
+                                <i class="fa-brands fa-twitter "></i>
+                                <i class="fa-brands fa-viber"></i>
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                        </div>
+
+                        <div class="header-top-dropdown-first">
+                            <ul >
+                                <li>
+                                    <a href="#">AUS/USD</a>
+                                </li>
+                                <li>
+                                    <a href="#">BNG/TK</a>
+                                </li>
+                                <li>
+                                    <a href="#">IN/RP</a>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="header-top-dropdown-second">
+                            <ul >
+                                <li>
+                                    <a href="#">Returns</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="header-middle">
+            <div class="container">
+                <div class="row align-items-center ">
+                    <div class="col-lg-2 ">
+                        <div class="header-middle-left">
+                            <a href="main.html"><img src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 ">
+                        <div class="header-middle-right d-flex justify-content-end align-items-center">
+                            <form class="d-flex align-items-center " action="">
+                                <div class="input-span-button d-flex align-items-center">
+                                    <input type="text" name="search-place" placeholder="Search for your item's type.....">
+                                    <span>All Category<i class="fas fa-angle-down"></i></span>
+                                    <button><i class="fas fa-search"></i></button>
+                                </div>
+                                <div class="middle-svg">
+                                    <svg class="svgUser1" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="m16 16a7 7 0 1 0 -7-7 7 7 0 0 0 7 7zm0-12a5 5 0 1 1 -5 5 5 5 0 0 1 5-5z"></path><path d="m20 18h-8a9 9 0 0 0 -9 9 3 3 0 0 0 3 3h20a3 3 0 0 0 3-3 9 9 0 0 0 -9-9zm6 10h-20a1 1 0 0 1 -1-1 7 7 0 0 1 7-7h8a7 7 0 0 1 7 7 1 1 0 0 1 -1 1z"></path></svg>
+                                    <svg class="svgCompare" width="512" height="512" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path d="m26 9a1 1 0 0 0 0-2h-4a1 1 0 0 0 -1 1v4a1 1 0 0 0 2 0v-1.66a9 9 0 0 1 -7 14.66c-.3 0-.6 0-.9 0a1 1 0 1 0 -.2 2c.36 0 .73.05 1.1.05a11 11 0 0 0 8.48-18.05z"></path><path d="m10 19a1 1 0 0 0 -1 1v1.66a9 9 0 0 1 8.8-14.48 1 1 0 0 0 .4-2 10.8 10.8 0 0 0 -2.2-.18 11 11 0 0 0 -8.48 18h-1.52a1 1 0 0 0 0 2h4a1 1 0 0 0 1-1v-4a1 1 0 0 0 -1-1z"></path></svg>
+                                    <svg class="svgLove" width="512" height="512" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="m29.55 6.509c-1.73-2.302-3.759-3.483-6.031-3.509h-.076c-3.29 0-6.124 2.469-7.443 3.84-1.32-1.371-4.153-3.84-7.444-3.84h-.075c-2.273.026-4.3 1.207-6.059 3.549a8.265 8.265 0 0 0 1.057 10.522l11.821 11.641a1 1 0 0 0 1.4 0l11.82-11.641a8.278 8.278 0 0 0 1.03-10.562zm-2.432 9.137-11.118 10.954-11.118-10.954a6.254 6.254 0 0 1 -.832-7.936c1.335-1.777 2.831-2.689 4.45-2.71h.058c3.48 0 6.627 3.924 6.658 3.964a1.037 1.037 0 0 0 1.57 0c.032-.04 3.2-4.052 6.716-3.964a5.723 5.723 0 0 1 4.421 2.67 6.265 6.265 0 0 1 -.805 7.976z"></path></svg>
+                                    <svg class="shopBag" width="512" height="512" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="m26 8.9a1 1 0 0 0 -1-.9h-3a6 6 0 0 0 -12 0h-3a1 1 0 0 0 -1 .9l-1.78 17.8a3 3 0 0 0 .78 2.3 3 3 0 0 0 2.22 1h17.57a3 3 0 0 0 2.21-1 3 3 0 0 0 .77-2.31zm-10-4.9a4 4 0 0 1 4 4h-8a4 4 0 0 1 4-4zm9.53 23.67a1 1 0 0 1 -.74.33h-17.58a1 1 0 0 1 -.74-.33 1 1 0 0 1 -.26-.77l1.7-16.9h2.09v3a1 1 0 0 0 2 0v-3h8v3a1 1 0 0 0 2 0v-3h2.09l1.7 16.9a1 1 0 0 1 -.26.77z"></path></svg>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="header-footer ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header-footer-all d-flex justify-content-between align-items-center">
+                            <div class="header-footer-left">
+                                <span><i class="fas fa-bars"></i></span>
+                                <span id="all-categories-span">ALL CATEGORIES</span>
+                                <span><i class="fas fa-angle-down"></i></span>
+                            </div>
+                            <div class="header-footer-right ">
+                                <ul class="nav-links d-flex gap-1 justify-content-end">
+                                    <li>
+                                        <a href="">HOME</a>
+                                        <span><i class="fas fa-angle-down"></i></span>
+                                    </li>
+                                    <li>
+                                        <a href="">CATECORIES</a>
+                                        <span><i class="fas fa-angle-down"></i></span>
+                                    </li>
+                                    <li>
+                                        <a href="">SHOP</a>
+                                        <span><i class="fas fa-angle-down"></i></span>
+                                    </li>
+                                    <li>
+                                        <a href="">PAGES</a>
+                                        <span><i class="fas fa-angle-down"></i></span>
+                                    </li>
+                                    <li>
+                                        <a href="">SPECIAL</a>
+                                        <span><i class="fas fa-angle-down"></i></span>
+                                    </li>
+                                    <li>
+                                        <a href="">STORE LIST</a>
+                                        <span><i class="fas fa-angle-down"></i></span>
+                                    </li>
+                                    <li>
+                                        <a href="">CONTACT</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+            
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="slider">
+        <div class="container">
+          <div class="sliders">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="slider-content">
+                <h5>BEST DEAL !</h5>
+                <h2>SMART TV BRACELET</h2>
+                <p>Get up to <span>50%</span> off Today Only </p>
+                <a href="#0" target="_blank" class="thm-btn btn btn-icon-right" data-animation="" data-delay="1s"
+                  tabindex="0">Shop Now </a>
+              </div>
+              <div class="slider-image text-end">
+                <img src="assets/images/slider_img01.png" alt="">
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="slider-content">
+                <h5>BEST DEAL !</h5>
+                <h2>SMART WATCH BRACELET</h2>
+                <p>Get up to <span>50%</span> off Today Only </p>
+                <a href="#0" target="_blank" class="thm-btn btn btn-icon-right" data-animation="" data-delay="1s"
+                  tabindex="0">Shop Now </a>
+              </div>
+              <div class="slider-image text-end">
+                <img src="assets/images/slider_img01.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- <section id="deal-end">
+        <div class="super-deal">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-between">
+                        <div class="title-plugin">
+                            <div class="super-deal-left">
+                                <h3>
+                                    Super Deals
+                                    <span>End in</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="plugin">
+                            <div class="clock"></div>
+                        </div>
+                        <div class="super-deal-right ">
+                            <a href="">
+                                <span>View More</span>
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="Deals">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2-5">
+                    <div class="deals-item">
+                        <div class="deals-img">
+                            <span>Sale!</span>
+                            <a href=""><img src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/1d20de71-9151-425f-890b-2fd4c703c430.dfbaf58eff390bef1eec9774e2e32233-450x450.jpg" alt=""></a>
+                            <div class="overlay">
+
+                                <div class="overlay-cart d-flex">
+                                    <svg class="svgEye" height="20" width="512" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="m29.91 15.59c-.17-.39-4.37-9.59-13.91-9.59s-13.74 9.2-13.91 9.59a1 1 0 0 0 0 .82c.17.39 4.37 9.59 13.91 9.59s13.74-9.2 13.91-9.59a1 1 0 0 0 0-.82zm-13.91 8.41c-7.17 0-11-6.32-11.88-8 .88-1.68 4.71-8 11.88-8s11 6.32 11.88 8c-.88 1.68-4.71 8-11.88 8z"></path><path d="m16 10a6 6 0 1 0 6 6 6 6 0 0 0 -6-6zm0 10a4 4 0 1 1 4-4 4 4 0 0 1 -4 4z"></path></svg>
+                                    <svg class="svgLove" width="512" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="m29.55 6.509c-1.73-2.302-3.759-3.483-6.031-3.509h-.076c-3.29 0-6.124 2.469-7.443 3.84-1.32-1.371-4.153-3.84-7.444-3.84h-.075c-2.273.026-4.3 1.207-6.059 3.549a8.265 8.265 0 0 0 1.057 10.522l11.821 11.641a1 1 0 0 0 1.4 0l11.82-11.641a8.278 8.278 0 0 0 1.03-10.562zm-2.432 9.137-11.118 10.954-11.118-10.954a6.254 6.254 0 0 1 -.832-7.936c1.335-1.777 2.831-2.689 4.45-2.71h.058c3.48 0 6.627 3.924 6.658 3.964a1.037 1.037 0 0 0 1.57 0c.032-.04 3.2-4.052 6.716-3.964a5.723 5.723 0 0 1 4.421 2.67 6.265 6.265 0 0 1 -.805 7.976z"></path></svg>
+                                    <svg class="svgCompare" width="512" height="20" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path d="m26 9a1 1 0 0 0 0-2h-4a1 1 0 0 0 -1 1v4a1 1 0 0 0 2 0v-1.66a9 9 0 0 1 -7 14.66c-.3 0-.6 0-.9 0a1 1 0 1 0 -.2 2c.36 0 .73.05 1.1.05a11 11 0 0 0 8.48-18.05z"></path><path d="m10 19a1 1 0 0 0 -1 1v1.66a9 9 0 0 1 8.8-14.48 1 1 0 0 0 .4-2 10.8 10.8 0 0 0 -2.2-.18 11 11 0 0 0 -8.48 18h-1.52a1 1 0 0 0 0 2h4a1 1 0 0 0 1-1v-4a1 1 0 0 0 -1-1z"></path></svg>
+                                </div>
+                                
+                                <div class="overlay-extra">
+                                    <a href="">Add to cart</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="deals-text">
+                            <h6 >
+                                <a href="">Apple 256GB</a>
+                            </h6>
+                            <p>
+                                US <span class="deals-text-span1">$240.00</span> <span class="deals-text-span2"> | { 4% off }</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="limited-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 ">
+                        <div class="limited-area-left d-flex align-items-center justify-content-end  ">
+                            <div class="limited-area-title">
+                                <span >exclusive offer</span>
+                                <h2 >Smart Watch Bracelet</h2>
+                            </div>
+                            <div class="limited-area-disc">
+                                <img src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/limited_offer_discount.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-end align-items-center ">
+                        <div class="limited-area-right align-items-center">
+                            <a href="">limited time offer</a>
+                            <div class="amount-info d-flex align-items-center">
+                                <span class="UPTO">UPTO</span>
+                                <span class="amount">$ 50.00</span>
+                                <span class="off">OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subscribe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="subscribe-all d-flex justify-content-between">
+                            <div class="subscribe-left">
+                                <h4>Subscribe Now !</h4>
+                                <span>Venam By Signing Up To Our Newsletter.</span>
+                            </div>
+                            <div class="subscribe-right">
+                                <span>
+                                    <input type="email" placeholder="Enter Your Email....">
+                                </span>
+                                <br>
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="find">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="find-all">
+                            <div class="find-all-top">
+                                <h4>Find Out More</h4>
+                            </div>
+                            <div class="find-all-bottom d-flex ">
+                                <span>Main Categories : </span>
+                                <ul class="d-flex">
+                                    <li>
+                                        <a href="">Accessories</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li>
+                                        <a href="">Adapters</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li>
+                                        <a href="">Batteries</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li>
+                                        <a href="">Webcams</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li>
+                                        <a href="">Televisions</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li>
+                                        <a href="">Projectors</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li>
+                                        <a href="">Bags & Cases</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li>
+                                        <a href="">Receivers</a>
+                                        <span>|</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="venam-info">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-3">
+                        <div class="info-all-first">
+                            <a href="main.html"><img src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/logo_black.png" alt=""></a>
+                            <p>Namkand sodales vel online best prices Amazon Check out ethnic wear, formal wear western wear Blood Pressure Rate Monito lorem ipsum dolor sit amet lorem ipsum sonda mony daml...</p>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-pinterest"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="info-all-second">
+                            <h5>Customer Service</h5>
+                            <ul>
+                                <li>
+                                    <a href="main.html">Help Center</a>
+                                </li>
+                                <li>
+                                    <a href="main.html">Returns</a>
+                                </li>
+                                <li>
+                                    <a href="main.html">Product Recalls</a>
+                                </li>
+                                <li>
+                                    <a href="main.html">Accessibility</a>
+                                </li>
+                                <li>
+                                    <a href="main.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                   <div class="col-lg-3">
+                        <div class="info-all-third">
+                            <h5>Quick Links</h5>
+                            <ul>
+                                <li>
+                                    <a href="main.html">Return Policy</a>
+                                </li>
+                                <li>
+                                    <a href="main.html">Terms Of Use</a>
+                                </li>
+                                <li>
+                                    <a href="main.html">Security</a>
+                                </li>
+                                <li>
+                                    <a href="main.html">About us</a>
+                                </li>
+                                <li>
+                                    <a href="main.html">Store Pickup</a>
+                                </li>
+                            </ul>
+                        </div>
+                   </div>
+                   <div class="col-lg-3">
+                    <div class="info-all-fourth">
+                        <h5>Contact Us</h5>
+                        <ul>
+                            <li>
+                                <span><i class="fas fa-map-marker-alt"></i>W898 RTower Stat, Suite 56</span>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-headphones"></i>458-965-3224</span>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-envelope-open"></i>Support@info.Com</span>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-fax"></i>458-965-3224</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-reserv" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="reserv-all d-flex justify-content-between align-items-center">
+                            <div class="reserv-all-left">
+                                <p>Copyright © 2021 - Venam All Rights Reserved.</p>
+                            </div>
+                            <div class="reserv-all-right">
+                                <img src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/card_img.png" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="/path/to/cdn/jquery.min.js"></script>
+    <script src="/path/to/compiled/flipclock.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
